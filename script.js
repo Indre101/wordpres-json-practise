@@ -4,6 +4,10 @@ const squareLoader = document.querySelector(".square");
 
 window.addEventListener("DOMContentLoaded", init);
 
+
+// document.querySelector("button").addEventListener("click", getSearchData);
+
+
 function init() {
 
 
@@ -37,7 +41,6 @@ function showData(data) {
 
 function showPost(element) {
   const cln = template.cloneNode(true);
-  cln.querySelector(".posts").classList.add("active");
   cln.querySelector("h1").textContent = element.title.rendered;
   cln.querySelector("article").innerHTML = element.content.rendered;
   // cln.querySelector(".featured-img").src =
@@ -49,7 +52,6 @@ function showPost(element) {
 
 
 
-// document.querySelector("button").addEventListener("click", getSearchData);
 
 
 function getSearchData() {
